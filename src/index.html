@@ -8,7 +8,7 @@
   <title>Project</title>
   <link rel="stylesheet" href="../dist/output.css">
 </head>
-<body class="relative">
+<body class="relative font-sans">
   <header class="px-12 py-6  sticky shadow-md ">
     <div class="container mx-auto flex justify-between">
       <h3 class="font-bold text-xl">
@@ -36,7 +36,7 @@
    
     </div>
 
-    <div class="mobile-menu absolute top-0 left-0 h-screen w-screen flex justify-center items-center">
+    <div class="md:hidden mobile-menu absolute top-0 left-0 h-screen w-screen bg-white flex justify-center items-center">
         <ul class="flex flex-col gap-12">
           <li class="text-lg font-semibold text-black">Home</li>
           <li class="text-lg font-semibold text-black">About</li>
@@ -45,5 +45,31 @@
         </ul>
     </div>
   </header>
+
+  <main>
+    <section class="bg-gray-50 py-16">
+      <div class="lg:w-4/5 mx-auto flex lg:flex-row flex-col-reverse">
+        <div class="flex flex-col flex-1 text-center lg:text-start sm:w-4/5 w-5/6 lg:w-full mx-auto">
+          <h1 class="text-4xl  sm:text-6xl text-gray-800 font-bold mb-8 pt-10 ">
+            Front-End React Developer &#128075
+          </h1>
+          <p class="text-lg font-medium  text-gray-700 mb-8">
+            Hi, I'm Bakhodirov Khusan. A passionate Front-end React Developer based in Tashkent, Uzbekistan. 📍
+          </p>
+          <div>
+            <ion-icon class="text-3xl mr-4" name="logo-linkedin"></ion-icon>
+            <ion-icon class="text-3xl" name="logo-github"></ion-icon>
+          </div>
+        </div>
+        <div class="flex-1 flex lg:justify-end justify-center ">
+          <img class="w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 image border-solid border-black border-2" src="../img/developer.webp" alt="image of me">
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
