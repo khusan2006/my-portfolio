@@ -4,14 +4,21 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="../js/main.js" defer></script>
   <title>Khusan Bakhodirov</title>
+  <!-- Particles js -->
+  <script src="../js/particles.js" defer></script>
+  <script src="../js/app.js" defer></script>
+  
+  <script  src="../js/main.js" defer></script>
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600&family=Poppins:ital,wght@0,400;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600&family=Poppins:ital,wght@0,400;0,700;1,600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="../dist/output.css">
 </head>
 <body class="relative font-sans">
+  <!-- Header section -->
   <header class="px-12 py-6  sticky shadow-md ">
     <div class="container mx-auto flex justify-between">
       <h3 class="font-bold text-xl cursor-pointer" aria-label="logo">
@@ -50,9 +57,11 @@
   </header>
 
   <main>
-    <section class="bg-gray-50 pt-20 pb-12">
+    <!-- Hero section -->
+    <section class="bg-gray-50 pt-20 pb-12 relative overflow-x-hidden">
+      <div id="particles-js" class="absolute w-screen h-5/6 top-0 left-0"></div>
       <div class="w-full sm:max-w-3xl md:max-w-4xl lg:max-w-5xl mx-auto flex lg:flex-row flex-col-reverse">
-        <div class="flex flex-col flex-1 text-center lg:text-start sm:w-4/5 w-5/6 lg:w-full mx-auto">
+        <div class="z-10 flex flex-col flex-1 text-center lg:text-start sm:w-4/5 w-5/6 lg:w-full mx-auto">
           <h1 class="text-4xl  sm:text-6xl text-gray-800 font-bold mb-8 pt-10 ">
             Front-End React Developer &#128075
           </h1>
@@ -65,9 +74,13 @@
           </div>
         </div>
         <div class="flex-1 flex lg:justify-end justify-center ">
-          <img class="w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 image border-solid border-black border-2" src="../img/developer.webp" alt="image of me">
+          <img class="z-10 w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 image border-solid border-black border-2" src="../img/developer.webp" alt="image of me">
         </div>
       </div>
+    </section>
+    <!-- About section -->
+    <section  class="">
+
     </section>
   </main>
 
