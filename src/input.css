@@ -2,13 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+    width: 8px;
+}
 
+::-webkit-scrollbar-thumb {
+    background-color: #8e8e8e;
+    border-radius: 20px;
+}
+::-webkit-scrollbar-track {
+    background-color: #fff;
+    border-radius: 20px;
+}
 .image{
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
     -webkit-animation: morph 8s ease-in-out infinite;
     animation: animateImage 8s ease-in-out infinite;
 }
 
+.about-rotate{
+    animation: rotate 9s linear infinite;
+}
+
+
+@keyframes rotate{
+    100%{
+        transform: rotate(1turn);
+    }
+}
 @keyframes animateImage{
     0%{
         border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
@@ -20,3 +41,4 @@
         border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
     }
 }
+
