@@ -6,7 +6,12 @@ module.exports = {
       sans: ['"Poppins"', 'sans-serif'],
       mulish: ["Mulish"]
     },
-    extend: {},
+    extend: {
+      height: {
+        '100': '26rem'
+      },
+
+    },
   },
   plugins: [],
 }
