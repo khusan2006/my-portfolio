@@ -1,6 +1,5 @@
 const btn = document.querySelector('button.menu-button');
 const menu = document.querySelector(".mobile-menu");
-const body = document.querySelector('body');
 const themeToggle = document.querySelectorAll('.theme-toggle');
 themeToggle.forEach((el) => {
     el.addEventListener('click', () => {
