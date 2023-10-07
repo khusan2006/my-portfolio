@@ -24,7 +24,7 @@
 
   <link rel="stylesheet" href="./css/output.css">
 </head>
-<body class="relative font-sans ">
+<body class="relative font-sans">
   <!-- Header section -->
   <header class="px-12 py-6 dark:text-white  bg-white dark:bg-gray-900 sticky shadow-md dark:shadow-white-md top-0 z-50 ">
     <div class="container mx-auto flex justify-between">
@@ -37,11 +37,13 @@
         <li class="text-lg font-semibold text-gray-900 dark:text-white"><a href="#">About</a></li>
         <li class="text-lg font-semibold text-gray-900 dark:text-white"><a href="#">Projects</a></li>
         <li class="text-lg font-semibold text-gray-900 dark:text-white"><a href="#">Contact</a></li>
-        <li id="theme-toggle" class="flex items-center justify-center text-xl font-semibold text-gray-900 dark:text-white cursor-pointer"><ion-icon name="moon-outline"></ion-icon></li>
+        <li class="theme-toggle flex items-center justify-center text-xl font-semibold text-gray-900 dark:text-white cursor-pointer"><ion-icon name="moon-outline"></ion-icon></li>
       </ul>
+
       <div class="md:hidden flex items-center z-50">
-        <button class="outline-none menu-button">
-            <svg class="w-6 h-6 text-black"
+      <div class="theme-toggle flex items-center justify-center text-xl font-semibold text-gray-900 dark:text-white cursor-pointer"><ion-icon name="moon-outline"></ion-icon><div/>
+        <button class="outline-none menu-button flex items-center justify-center ml-4">
+            <svg class="w-6 h-6 text-black dark:text-white"
              x-show="! showMenu"
              fill="none"
              stroke-linecap="round"
@@ -54,12 +56,12 @@
    
     </div>
 
-    <div class="hidden mobile-menu absolute top-0 left-0 h-screen w-screen bg-white ">
+    <div class="hidden mobile-menu absolute top-0 left-0 h-screen w-screen bg-white dark:bg-gray-900">
         <ul class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col gap-12">
-          <li class="text-lg font-semibold text-black">Home</li>
-          <li class="text-lg font-semibold text-black">About</li>
-          <li class="text-lg font-semibold text-black">Projects</li>
-          <li class="text-lg font-semibold text-black">Contact</li>
+          <li class="text-lg font-semibold dark:text-white text-black">Home</li>
+          <li class="text-lg font-semibold dark:text-white text-black">About</li>
+          <li class="text-lg font-semibold dark:text-white text-black">Projects</li>
+          <li class="text-lg font-semibold dark:text-white text-black">Contact</li>
         </ul>
     </div>
   </header>

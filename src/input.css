@@ -17,6 +17,14 @@
     border-radius: 20px;
 }
 
+html.dark ::-webkit-scrollbar-track {
+    border-radius: 0;
+    --tw-text-opacity: 1;
+    background-color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+html.dark ::-webkit-scrollbar-thumb {
+    background-color: white;
+}
 .image{
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
     -webkit-animation: morph 8s ease-in-out infinite;
