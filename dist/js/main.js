@@ -5,10 +5,10 @@ const themeToggle = document.querySelectorAll('.theme-toggle');
 themeToggle.forEach((el) => {
     el.addEventListener('click', () => {
         if(document.documentElement.classList.contains('dark')) {
-            el.insertAdjacentHTML = '<ion-icon name="moon-outline"></ion-icon>'
+            el.innerHTML = '<ion-icon name="moon-outline"></ion-icon>'
     
         }else{
-            el.insertAdjacentHTML = '<ion-icon name="sunny-outline"></ion-icon>'
+            el.innerHTML = '<ion-icon name="sunny-outline"></ion-icon>'
     
         }
         document.documentElement.classList.toggle('dark')
