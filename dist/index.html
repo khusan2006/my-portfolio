@@ -24,19 +24,20 @@
 
   <link rel="stylesheet" href="./css/output.css">
 </head>
-<body class="relative font-sans">
+<body class="relative font-sans ">
   <!-- Header section -->
-  <header class="px-12 py-6 bg-white sticky shadow-md top-0 z-50 ">
+  <header class="px-12 py-6 dark:text-white  bg-white dark:bg-gray-900 sticky shadow-md dark:shadow-white-md top-0 z-50 ">
     <div class="container mx-auto flex justify-between">
       <h3 class="font-bold text-xl cursor-pointer" aria-label="logo">
         Khusan.dev
       </h3>
   
-      <ul class="hidden md:flex md:gap-8">
-        <li class="text-lg font-semibold text-gray-900"><a href="#">Home</a></li>
-        <li class="text-lg font-semibold text-gray-900"><a href="#">About</a></li>
-        <li class="text-lg font-semibold text-gray-900"><a href="#">Projects</a></li>
-        <li class="text-lg font-semibold text-gray-900"><a href="#">Contact</a></li>
+      <ul class="hidden md:flex md:gap-8 md:items-center">
+        <li class="text-lg font-semibold text-gray-900 dark:text-white"><a href="#">Home</a></li>
+        <li class="text-lg font-semibold text-gray-900 dark:text-white"><a href="#">About</a></li>
+        <li class="text-lg font-semibold text-gray-900 dark:text-white"><a href="#">Projects</a></li>
+        <li class="text-lg font-semibold text-gray-900 dark:text-white"><a href="#">Contact</a></li>
+        <li id="theme-toggle" class="flex items-center justify-center text-xl font-semibold text-gray-900 dark:text-white cursor-pointer"><ion-icon name="moon-outline"></ion-icon></li>
       </ul>
       <div class="md:hidden flex items-center z-50">
         <button class="outline-none menu-button">
@@ -65,14 +66,14 @@
 
   <main>
     <!-- Hero section -->
-    <section class="bg-gray-50 pt-20 pb-12 h-[calc(100vh-76px)] relative overflow-x-hidden ">
+    <section class="bg-gray-50 dark:bg-gray-900 dark:text-white pt-20 pb-12 h-[calc(100vh-76px)] relative overflow-x-hidden ">
       <div id="particles-js" class="hidden md:block absolute w-screen h-5/6 top-0 left-0"></div>
       <div class="w-full sm:max-w-3xl md:max-w-4xl lg:max-w-5xl mx-auto flex  lg:flex-row flex-col-reverse">
         <div class="z-10 flex flex-col flex-1 text-center lg:text-start sm:w-4/5 w-5/6 lg:w-full mx-auto">
-          <h1 class="text-4xl  sm:text-6xl text-gray-800 font-bold mb-8 pt-10 ">
+          <h1 class="text-4xl  sm:text-6xl text-gray-800 dark:text-white font-bold mb-8 pt-10 ">
             Front-End React Developer &#128075
           </h1>
-          <p class="text-lg font-medium font-mulish  text-gray-700 mb-8">
+          <p class="text-lg font-medium font-mulish  text-gray-700 dark:text-gray-300 mb-8">
             Hi, I'm Bakhodirov Khusan. A passionate Front-end React Developer based in Tashkent, Uzbekistan. 📍
           </p>
           <div>
@@ -86,9 +87,9 @@
       </div>
     </section>
     <!-- About section -->
-    <section  class="pt-8 pb-44">
+    <section  class="pt-8 pb-44 dark:bg-gray-800">
       <div class="flex flex-col lg:flex-row  items-center w-full sm:w-4/5 md:max-w-4xl lg:max-w-5xl mx-auto">
-        <h3 class="font-mulish font-semibold text-gray-900 text-lg mb-0.5 lg:mr-3">
+        <h3 class="font-mulish font-semibold text-gray-900 dark:text-white text-lg mb-0.5 lg:mr-3">
           Tech Stack
         </h3>
         <span class="lg:w-0.5 lg:h-7 w-20 h-0.5 bg-gray-500 inline-block mb-8 sm:mb-10 lg:mb-0 lg:mr-20"></span>
@@ -188,17 +189,17 @@
         <div class="flex-1 flex justify-center lg:justify-start items-center mb-16 sm:mb-20 lg:mb-0 relative">
           <img class="overflow-hidden rounded-3xl  w-9/12 lg:w-10/12 h-full" src="./img/about-image.webp" alt="picture of notebook on table">
           <img class="absolute w-16 -bottom-2 right-20 z-10 hidden lg:block" src="./img/frontend-emoji.png" alt="emoji of developer">
-          <img class="absolute bg-white rounded-full w-48 -bottom-20  right-4 about-rotate hidden lg:block"  src="./img/frontend.svg" alt="frontend developer">
+          <img class="absolute bg-white  rounded-full w-48 -bottom-20  right-4 about-rotate hidden lg:block"  src="./img/frontend.svg" alt="frontend developer">
         </div>
         <div class="flex-1 flex flex-col text-center md:text-start lg:items-start items-center">
           <h2 class="font-bold text-xl mb-4 text-blue-500 uppercase font-sans">
             About me 
           </h2>
-          <h3 class="text-xl sm:text-2xl  font-bold text-gray-900 mb-6 w-10/12 sm:w-7/12 lg:w-full">
+          <h3 class="text-xl sm:text-2xl  font-bold text-gray-900 dark:text-white mb-6 w-10/12 sm:w-7/12 lg:w-full">
             A dedicated Front-end Developer
             based in Tashkent, Uzbekistan 📍
           </h3>
-          <p class="lg:w-full w-10/12 sm:w-8/12 font-mulish font-medium text-gray-500 text-base/7">As a Junior Front-End Developer, I possess an impressive arsenal of skills in HTML, CSS,
+          <p class="lg:w-full w-10/12 sm:w-8/12 font-mulish font-medium text-gray-500 dark:text-gray-300 text-base/7">As a Junior Front-End Developer, I possess an impressive arsenal of skills in HTML, CSS,
              JavaScript, React, Tailwind, and SCSS. I excel in designing and maintaining responsive 
              websites that offer a smooth user experience. My expertise lies in crafting dynamic, 
              engaging interfaces through writing clean and optimized code and utilizing cutting-edge
@@ -209,25 +210,25 @@
       </div>
     </section>
     <!-- Portofolio section -->
-    <section class="bg-gray-50 py-36">
+    <section class="bg-gray-50 py-36 dark:bg-gray-900">
       <div class="flex flex-col items-center lg:items-start w-full sm:w-4/5 md:max-w-4xl lg:max-w-5xl mx-auto">
         <h3 class="font-bold text-xl mb-4 text-blue-500 uppercase font-sans text-center lg:text-start">
           Portfolio
         </h3>
-        <h4 class="text-xl sm:text-2xl text-center lg:text-start font-bold text-gray-900 mb-20 w-10/12 sm:w-11/12 lg:w-full">
+        <h4 class="text-xl sm:text-2xl text-center lg:text-start font-bold text-gray-900 dark:text-white mb-20 w-10/12 sm:w-11/12 lg:w-full">
           Each project is a unique piece of development 🧩
         </h4>
 
         <div class="flex flex-col gap-y-12 px-4 sm:px-0">
-          <div class="h-auto flex lg:flex-row flex-col gap-16 p-6 bg-white rounded-2xl shadow-2xl">
+          <div class="h-auto flex lg:flex-row flex-col gap-16 p-6 bg-white dark:bg-gray-800 dark:shadow-white-lg rounded-2xl shadow-2xl">
             <div class="lg:h-100 h-72 sm:h-96 overflow-hidden shadow-xl rounded-2xl">
               <img style="width: 160rem; transition: all 13s ease;" class="overflow-hidden hover:-translate-y-[calc(100%-26rem)] cursor-pointer" src="./img/portfolio-1.webp" alt="picture of my website">
             </div>
             <div class="lg:pt-3 pt-2 lg:pr-10 flex flex-col items-center lg:overflow-visible">
-                <h3 class="text-base lg:text-lg uppercase  flex justify-center flex-wrap items-center gap-1 font-sans font-bold mb-7">
-                  Car Rental <span class="text-sm text-gray-700">(February 2023)🚗</span>
+                <h3 class="text-base lg:text-lg uppercase dark:text-white flex justify-center flex-wrap items-center gap-1 font-sans font-bold mb-7">
+                  Car Rental <span class="text-sm dark:text-gray-300 text-gray-700">(February 2023)🚗</span>
                 </h3>
-                <p class="font-sans font-medium text-gray-600 text-center text-lg mb-6">
+                <p class="font-sans font-medium text-gray-600 dark:text-gray-300 text-center text-lg mb-6">
                     A car rental website is an online platform that allows users to rent cars for personal
                    or business use.
                    The website provides an interface for searching, comparing, and reserving cars.
@@ -237,21 +238,21 @@
                   <h5 class="shadow-lg font-mulish py-3 px-4 text-black bg-white">SCSS</h5>
                 </div>
                 <div class="flex gap-14">
-                  <p class="flex justify-center items-center gap-1 text-lg font-medium text-gray-900">
+                  <p class="flex justify-center items-center gap-1 text-lg font-medium text-gray-900 dark:text-white">
                     Code <ion-icon name="logo-github"></ion-icon>
                   </p>
-                  <p class="flex justify-center items-center gap-1 text-lg font-medium text-gray-900">
+                  <p class="flex justify-center items-center gap-1 text-lg font-medium text-gray-900 dark:text-white">
                     Live Demo <ion-icon name="laptop-outline"></ion-icon>
                   </p>
                 </div>
             </div>
           </div>
-          <div class="h-auto flex flex-col-reverse lg:flex-row gap-16 p-6 bg-white rounded-2xl shadow-2xl">
+          <div class="h-auto flex flex-col-reverse lg:flex-row gap-16 p-6 bg-white dark:bg-gray-800 rounded-2xl dark:shadow-white-lg shadow-2xl">
             <div class=" lg:pt-3 pt-2 lg:pl-10 flex flex-col items-center ">
-                <h3 class="text-base lg:text-lg uppercase flex-wrap flex justify-center items-center gap-1 font-sans font-bold mb-7">
-                  COINDOM <span class="text-sm text-gray-700">(February 2023)🪙</span>
+                <h3 class="text-base lg:text-lg uppercase flex-wrap dark:text-white flex justify-center items-center gap-1 font-sans font-bold mb-7">
+                  COINDOM <span class="text-sm text-gray-700 dark:text-gray-300">(February 2023)🪙</span>
                 </h3>
-                <p class="font-sans font-medium text-gray-600 text-center text-lg mb-6">
+                <p class="font-sans font-medium text-gray-600 dark:text-gray-300 text-center text-lg mb-6">
                   Coindom is a crypto app that allows users to search for information about various cryptocurrencies in real-time.
                 </p>
                 <div class="flex gap-4 mb-10 justify-center items-center font-semibold text-lg">
@@ -259,10 +260,10 @@
                   <h5 class="shadow-lg font-mulish py-3 px-4 text-black bg-white">SCSS</h5>
                 </div>
                 <div class="flex gap-14">
-                  <p class="flex justify-center items-center gap-1 text-lg font-medium text-gray-900">
+                  <p class="flex justify-center items-center gap-1 text-lg font-medium dark:text-white text-gray-900">
                     Code <ion-icon name="logo-github"></ion-icon>
                   </p>
-                  <p class="flex flex-wrap justify-center items-center gap-1 text-lg font-medium text-gray-900">
+                  <p class="flex flex-wrap justify-center items-center gap-1 text-lg font-medium dark:text-white text-gray-900">
                     Live Demo <ion-icon name="laptop-outline"></ion-icon>
                   </p>
                 </div>
@@ -271,15 +272,15 @@
               <img style="width: 100rem; transition: all 13s ease;"  class=" overflow-hidden hover:-translate-y-[calc(100%-26rem)] cursor-pointer" src="./img/portfolio-2.png" alt="picture of my website">
             </div>
           </div>
-          <div class="h-auto flex flex-col lg:flex-row gap-16 p-6 bg-white rounded-2xl shadow-2xl">
+          <div class="h-auto flex flex-col lg:flex-row gap-16 p-6 dark:bg-gray-800 dark:shadow-white-lg bg-white rounded-2xl shadow-2xl">
             <div class="lg:h-100 h-72 sm:h-96  overflow-hidden shadow-xl rounded-2xl ">
               <img style="width: 140rem;  transition: all 13s ease;" class="overflow-hidden hover:-translate-y-[calc(100%-26rem)] cursor-pointer" src="./img/portfolio-3.webp" alt="picture of my website">
             </div>
             <div class="lg:pt-3 pt-2 lg:pr-10 flex flex-col items-center ">
-                <h3 class="text-base lg:text-lg uppercase flex-wrap  flex justify-center items-center gap-1 font-sans font-bold mb-7">
-                  GYMATE <span class="text-sm text-gray-700">(JANUARY 2023)🏋️</span>
+                <h3 class="text-base dark:text-white lg:text-lg uppercase flex-wrap  flex justify-center items-center gap-1 font-sans font-bold mb-7">
+                  GYMATE <span class="text-sm text-gray-700 dark:text-gray-300">(JANUARY 2023)🏋️</span>
                 </h3>
-                <p class="font-sans font-medium text-gray-600 text-center text-lg mb-6">
+                <p class="font-sans font-medium text-gray-600 dark:text-gray-300 text-center text-lg mb-6">
                   A gym website is a comprehensive resource for fitness information, class
                    schedules, membership options, and tools to help users achieve their fitness goals.
                 </p>
@@ -288,21 +289,21 @@
                   <h5 class="shadow-lg font-mulish py-3 px-4 text-black bg-white">SCSS</h5>
                 </div>
                 <div class="flex  gap-14">
-                  <p class="flex justify-center items-center gap-1 text-lg font-medium text-gray-900">
+                  <p class="flex justify-center items-center gap-1 text-lg font-medium dark:text-white text-gray-900">
                     Code <ion-icon name="logo-github"></ion-icon>
                   </p>
-                  <p class="flex justify-center items-center gap-1 text-lg font-medium text-gray-900">
+                  <p class="flex justify-center items-center gap-1 text-lg font-medium dark:text-white text-gray-900">
                     Live Demo <ion-icon name="laptop-outline"></ion-icon>
                   </p>
                 </div>
             </div>
           </div>
-          <div class="h-auto flex-col-reverse lg:flex-row flex gap-16 p-6 bg-white rounded-2xl shadow-2xl">
+          <div class="h-auto flex-col-reverse lg:flex-row flex gap-16 p-6 dark:bg-gray-800 dark:shadow-white-lg bg-white rounded-2xl shadow-2xl">
             <div class=" lg:pt-3  pt-2 lg:pl-10 flex flex-col items-center ">
-                <h3 class="text-base lg:text-lg uppercase flex-wrap  flex justify-center items-center gap-1 font-sans font-bold mb-7">
-                  ECOMMERCE <span class="text-sm text-gray-700">(December 2023)🪙</span>
+                <h3 class="text-base lg:text-lg uppercase flex-wrap dark:text-white  flex justify-center items-center gap-1 font-sans font-bold mb-7">
+                  ECOMMERCE <span class="text-sm text-gray-700 dark:text-gray-300">(December 2023)🪙</span>
                 </h3>
-                <p class="font-sans font-medium text-gray-600 text-center text-lg mb-6">
+                <p class="font-sans font-medium text-gray-600 dark:text-gray-300 text-center text-lg mb-6">
                   With a focus on simplicity and clean design, this store prioritize user experience,
                    making it easy for customers to find and purchase the products they need.
                 </p>
@@ -311,10 +312,10 @@
                   <h5 class="shadow-lg font-mulish py-3 px-4 text-black bg-white">SCSS</h5>
                 </div>
                 <div class="flex  gap-14">
-                  <p class="flex justify-center items-center gap-1 text-lg font-medium text-gray-900">
+                  <p class="flex justify-center items-center gap-1 text-lg font-medium dark:text-white text-gray-900">
                     Code <ion-icon name="logo-github"></ion-icon>
                   </p>
-                  <p class="flex justify-center items-center gap-1 text-lg font-medium text-gray-900">
+                  <p class="flex justify-center items-center gap-1 text-lg font-medium dark:text-white text-gray-900">
                     Live Demo <ion-icon name="laptop-outline"></ion-icon>
                   </p>
                 </div>
@@ -330,31 +331,31 @@
       </div>
     </section>
 
-    <section class="bg-white py-28">
+    <section class="bg-white py-28 dark:bg-gray-800">
       <div class="flex flex-col items-center lg:items-start w-full sm:w-4/5 md:max-w-4xl lg:max-w-5xl mx-auto">
         <h3 class="font-bold text-xl mb-4 text-blue-500 uppercase font-sans text-center lg:text-start">
           About
         </h3>
-        <h4 class="text-xl sm:text-2xl text-center lg:text-start font-bold text-gray-900 mb-16 w-10/12 sm:w-11/12 lg:w-full">
+        <h4 class="text-xl sm:text-2xl dark:text-white text-center lg:text-start font-bold text-gray-900 mb-16 w-10/12 sm:w-11/12 lg:w-full">
           Don't be shy! Hit me up! 👇
         </h4>
-        <div class="flex gap-14">
-          <div class="flex items-center gap-4">
-            <div class="p-3 rounded-full shadow-lg flex justify-center items-center">
-              <ion-icon class="font-bold text-3xl text-blue-500" name="map-outline"></ion-icon>
+        <div class="flex flex-col md:flex-row gap-14">
+          <div class="flex flex-col md:flex-row items-center gap-4">
+            <div class="p-3 rounded-full shadow-lg dark:shadow-white-md flex justify-center items-center">
+              <ion-icon class="font-bold text-3xl text-blue-500 dark:text-white" name="map-outline"></ion-icon>
             </div>
-            <div>
-              <h6 class="text-gray-900 text-lg font-bold mb-2">Location</h6>
-              <p class="text-gray-600 text-lg">Tashkent, Uzbkekistan</p>
+            <div class="text-center md:text-start">
+              <h6 class="text-gray-900 dark:text-white text-lg font-bold mb-2">Location</h6>
+              <p class="text-gray-600 dark:text-gray-300 text-lg">Tashkent, Uzbkekistan</p>
             </div>
           </div>
-          <div class="flex items-center gap-4">
-            <div class="p-3 rounded-full shadow-lg flex justify-center items-center">
-              <ion-icon class="font-bold text-3xl text-blue-500" name="mail-outline"></ion-icon>
+          <div class="flex flex-col md:flex-row items-center gap-4">
+            <div class="p-3 rounded-full shadow-lg dark:shadow-white-md flex justify-center items-center">
+              <ion-icon class="font-bold text-3xl text-blue-500 dark:text-white" name="mail-outline"></ion-icon>
             </div>
-            <div>
-              <h6 class="text-gray-900 text-lg font-bold mb-2">Mail</h6>
-              <p class="text-gray-600 text-lg">bahodirovkhusan@gmail.com</p>
+            <div class="text-center md:text-start">
+              <h6 class="text-gray-900 text-lg font-bold mb-2 dark:text-white">Mail</h6>
+              <p class="text-gray-600 text-lg dark:text-gray-300">bahodirovkhusan@gmail.com</p>
             </div>
           </div>
         </div>
@@ -362,9 +363,22 @@
     </section>
   </main>
 
+  <footer class="bg-zinc-900 dark:bg-gray-900 text-white py-16">
+    <div class=" w-full sm:w-4/5 md:max-w-4xl lg:max-w-5xl mx-auto">
+      <div class="text-center md:text-start flex flex-col justify-center items-center md:items-start gap-6 md:gap-0 md:flex-row md:justify-between"> 
+        <h3 class="text-lg font-sans font-bold">
+          Copyright © 2023. All rights are reserved
+        </h3>
+        <div>
+          <ion-icon class="text-3xl mr-4" name="logo-linkedin"></ion-icon>
+          <ion-icon class="text-3xl" name="logo-github"></ion-icon>
+        </div>
+      </div>
+    </div>
+  </footer>
+
 
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
-    

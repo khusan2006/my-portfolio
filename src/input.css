@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 ::-webkit-scrollbar {
     width: 8px;
 }
@@ -14,6 +16,7 @@
     background-color: #fff;
     border-radius: 20px;
 }
+
 .image{
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
     -webkit-animation: morph 8s ease-in-out infinite;
