@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="light" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,7 +24,7 @@
 
   <link rel="stylesheet" href="./css/output.css">
 </head>
-<body class="relative font-sans">
+<body class="relative font-sans ">
   <!-- Header section -->
   <header class="px-12 py-6 dark:text-white  bg-white dark:bg-gray-900 sticky shadow-md dark:shadow-white-md top-0 z-50 ">
     <div class="container mx-auto flex justify-between">
@@ -33,10 +33,10 @@
       </h3>
   
       <ul class="hidden md:flex md:gap-8 md:items-center">
-        <li class="text-lg font-semibold text-gray-900 dark:text-white"><a href="#">Home</a></li>
-        <li class="text-lg font-semibold text-gray-900 dark:text-white"><a href="#">About</a></li>
-        <li class="text-lg font-semibold text-gray-900 dark:text-white"><a href="#">Projects</a></li>
-        <li class="text-lg font-semibold text-gray-900 dark:text-white"><a href="#">Contact</a></li>
+        <li class="text-lg font-semibold hover:text-blue-500 transition-all duration-300 text-gray-900 dark:text-white"><a href="#hero-section">Home</a></li>
+        <li class="text-lg font-semibold hover:text-blue-500 transition-all duration-300 text-gray-900 dark:text-white"><a href="#about-section">About</a></li>
+        <li class="text-lg font-semibold hover:text-blue-500 transition-all duration-300 text-gray-900 dark:text-white"><a href="#projects-section">Projects</a></li>
+        <li class="text-lg font-semibold hover:text-blue-500 transition-all duration-300 text-gray-900 dark:text-white"><a href="#contact-section">Contact</a></li>
         <li class="theme-toggle flex  items-center justify-center text-xl font-semibold text-gray-900 dark:text-white cursor-pointer">
           <ion-icon name="moon-outline"></ion-icon>
         </li>
@@ -63,17 +63,17 @@
 
     <div class="hidden mobile-menu absolute top-0 left-0 h-screen w-screen bg-white dark:bg-gray-900">
         <ul class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col gap-12">
-          <li class="text-lg font-semibold dark:text-white text-black">Home</li>
-          <li class="text-lg font-semibold dark:text-white text-black">About</li>
-          <li class="text-lg font-semibold dark:text-white text-black">Projects</li>
-          <li class="text-lg font-semibold dark:text-white text-black">Contact</li>
+          <li class="text-lg font-semibold hover:text-blue-500 transition-all duration-300 dark:text-white text-black"><a href="#hero-section">Home</a></li>
+          <li class="text-lg font-semibold hover:text-blue-500 transition-all duration-300 dark:text-white text-black"><a href="#about-section">About</a></li>
+          <li class="text-lg font-semibold hover:text-blue-500 transition-all duration-300 dark:text-white text-black"><a href="#projects-section">Projects</a></li>
+          <li class="text-lg font-semibold hover:text-blue-500 transition-all duration-300 dark:text-white text-black"><a href="#contact-section">Contact</a></li>
         </ul>
     </div>
   </header>
 
   <main>
     <!-- Hero section -->
-    <section class="bg-gray-50 dark:bg-gray-900 dark:text-white pt-20 pb-12 h-[calc(100vh-76px)] relative overflow-x-hidden overflow-y-hidden">
+    <section id="hero-section" class="bg-gray-50 dark:bg-gray-900 dark:text-white pt-20 pb-12 h-[calc(100vh-76px)] relative overflow-x-hidden overflow-y-hidden">
       <div id="particles-js" class="hidden md:block absolute w-screen h-5/6 top-0 left-0"></div>
       <div class="w-full sm:max-w-3xl md:max-w-4xl lg:max-w-5xl mx-auto flex  lg:flex-row flex-col-reverse">
         <div class="z-10 flex flex-col flex-1 text-center lg:text-start sm:w-4/5 w-5/6 lg:w-full mx-auto">
@@ -84,24 +84,24 @@
             Hi, I'm Bakhodirov Khusan. A passionate Front-end React Developer based in Tashkent, Uzbekistan. 📍
           </p>
           <div>
-            <ion-icon class="text-3xl mr-4" name="logo-linkedin"></ion-icon>
-            <ion-icon class="text-3xl" name="logo-github"></ion-icon>
+           <a href="https://www.linkedin.com/in/husan-bahodirov-908401245" target="_blank" class="hover:text-blue-500  transition-all duration-300"><ion-icon class="text-3xl mr-4" name="logo-linkedin"></ion-icon></a>
+           <a href="https://github.com/khusan2006" target="_blank" class="hover:text-blue-500  transition-all duration-300"><ion-icon class="text-3xl" name="logo-github"></ion-icon></a>
           </div>
         </div>
         <div class="flex-1 flex lg:justify-end justify-center ">
-          <img class="z-10 w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 image border-solid border-black border-2" src="./img/developer.webp" alt="image of me">
+          <img class="z-10 w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 image border-solid border-black dark:border-white border-2" src="./img/developer.webp" alt="image of me">
         </div>
       </div>
     </section>
     <!-- About section -->
-    <section  class="pt-8 pb-44 dark:bg-gray-800">
+    <section id="about-section" class="pt-8 pb-44 dark:bg-gray-800">
       <div class="flex flex-col lg:flex-row  items-center w-full sm:w-4/5 md:max-w-4xl lg:max-w-5xl mx-auto">
         <h3 class="font-mulish font-semibold text-gray-900 dark:text-white text-lg mb-0.5 lg:mr-3">
           Tech Stack
         </h3>
         <span class="lg:w-0.5 lg:h-7 w-20 h-0.5 bg-gray-500 inline-block mb-8 sm:mb-10 lg:mb-0 lg:mr-20"></span>
         <ul class="grid gap-x-12 gap-y-10 grid-cols-2 grid-rows-1  md:grid-cols-5 md:grid-rows-1">
-          <li>
+          <li class="hover:-translate-y-4 transition-all duration-300">
             <svg width="104.25" height="48" viewBox="0 0 556 256" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
               
                   <g transform="translate(0, 0)">
@@ -118,9 +118,8 @@
           </svg>
           
                   </g>
-                  
-            </svg></li>
-          <li>
+                  </svg></li>
+          <li class="hover:-translate-y-4 transition-all duration-300">
             <svg width="104.25" height="48" viewBox="0 0 556 256" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
               
                   <g transform="translate(0, 0)">
@@ -138,7 +137,7 @@
                   
             </svg>
           </li>
-          <li>
+          <li class="hover:-translate-y-4 transition-all duration-300">
             <svg width="104.25" height="48" viewBox="0 0 556 256" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
               
                   <g transform="translate(0, 0)">
@@ -150,7 +149,7 @@
                   </g>
                   
             </svg></li>
-          <li>
+          <li class="hover:-translate-y-4 transition-all duration-300">
             <svg width="104.25" height="48" viewBox="0 0 556 256" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
               
                   <g transform="translate(0, 0)">
@@ -162,8 +161,8 @@
                   </g>
                   
             </svg>
-          </li>
-          <li>
+          </li >
+          <li class="hover:-translate-y-4 transition-all duration-300">
             
   <svg width="104.25" height="48" viewBox="0 0 556 256" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
     
@@ -217,7 +216,7 @@
       </div>
     </section>
     <!-- Portofolio section -->
-    <section class="bg-gray-50 py-36 dark:bg-gray-900">
+    <section id="projects-section" class="bg-gray-50 py-36 dark:bg-gray-900">
       <div class="flex flex-col items-center lg:items-start w-full sm:w-4/5 md:max-w-4xl lg:max-w-5xl mx-auto">
         <h3 class="font-bold text-xl mb-4 text-blue-500 uppercase font-sans text-center lg:text-start">
           Portfolio
@@ -228,9 +227,11 @@
 
         <div class="flex flex-col gap-y-12 px-4 sm:px-0">
           <div class="h-auto flex lg:flex-row flex-col gap-16 p-6 bg-white dark:bg-gray-800 dark:shadow-white-lg rounded-2xl shadow-2xl">
+           <a href="">
             <div class="lg:h-100 h-72 sm:h-96 overflow-hidden shadow-xl rounded-2xl">
               <img style="width: 160rem; transition: all 13s ease;" class="overflow-hidden lg:hover:-translate-y-[calc(100%-26rem)] sm:hover:-translate-y-[calc(100%-24rem)] hover:-translate-y-[calc(100%-18rem)] cursor-pointer" src="./img/portfolio-1.webp" alt="picture of my website">
             </div>
+           </a>
             <div class="lg:pt-3 pt-2 lg:pr-10 flex flex-col items-center lg:overflow-visible">
                 <h3 class="text-base lg:text-lg uppercase dark:text-white flex justify-center flex-wrap items-center gap-1 font-sans font-bold mb-7">
                   Car Rental <span class="text-sm dark:text-gray-300 text-gray-700">(February 2023)🚗</span>
@@ -245,11 +246,11 @@
                   <h5 class="shadow-lg font-mulish py-3 px-4 text-black bg-white">SCSS</h5>
                 </div>
                 <div class="flex gap-14">
-                  <p class="flex justify-center items-center gap-1 text-lg font-medium text-gray-900 dark:text-white">
-                    Code <ion-icon name="logo-github"></ion-icon>
+                  <p >
+                   <a href="" class="flex justify-center items-center gap-1 text-lg font-medium text-gray-900 dark:text-white hover:text-blue-500 transition-all duration-300"> Code <ion-icon name="logo-github"></ion-icon></a>
                   </p>
-                  <p class="flex justify-center items-center gap-1 text-lg font-medium text-gray-900 dark:text-white">
-                    Live Demo <ion-icon name="laptop-outline"></ion-icon>
+                  <p>
+                    <a href="#" class="flex justify-center items-center gap-1 text-lg font-medium text-gray-900 dark:text-white hover:text-blue-500 transition-all duration-300">Live Demo <ion-icon name="laptop-outline"></ion-icon></a>
                   </p>
                 </div>
             </div>
@@ -267,22 +268,26 @@
                   <h5 class="shadow-lg font-mulish py-3 px-4 text-black bg-white">SCSS</h5>
                 </div>
                 <div class="flex gap-14">
-                  <p class="flex justify-center items-center gap-1 text-lg font-medium dark:text-white text-gray-900">
-                    Code <ion-icon name="logo-github"></ion-icon>
-                  </p>
-                  <p class="flex flex-wrap justify-center items-center gap-1 text-lg font-medium dark:text-white text-gray-900">
-                    Live Demo <ion-icon name="laptop-outline"></ion-icon>
-                  </p>
+                  <p >
+                    <a href="" class="flex justify-center items-center gap-1 text-lg font-medium text-gray-900 dark:text-white hover:text-blue-500 transition-all duration-300"> Code <ion-icon name="logo-github"></ion-icon></a>
+                   </p>
+                   <p>
+                     <a href="#" class="flex justify-center items-center gap-1 text-lg font-medium text-gray-900 dark:text-white hover:text-blue-500 transition-all duration-300">Live Demo <ion-icon name="laptop-outline"></ion-icon></a>
+                   </p>
                 </div>
             </div>
-            <div class="lg:h-100 h-72 sm:h-96 overflow-hidden shadow-xl rounded-2xl ">
-              <img style="width: 100rem; transition: all 13s ease;"  class=" overflow-hidden lg:hover:-translate-y-[calc(100%-26rem)] sm:hover:-translate-y-[calc(100%-24rem)] hover:-translate-y-[calc(100%-18rem)] cursor-pointer" src="./img/portfolio-2.png" alt="picture of my website">
-            </div>
+            <a href="">
+              <div class="lg:h-100 h-72 sm:h-96 overflow-hidden shadow-xl rounded-2xl ">
+                <img style="width: 100rem; transition: all 13s ease;"  class=" overflow-hidden lg:hover:-translate-y-[calc(100%-26rem)] sm:hover:-translate-y-[calc(100%-24rem)] hover:-translate-y-[calc(100%-18rem)] cursor-pointer" src="./img/portfolio-2.png" alt="picture of my website">
+              </div>
+            </a>
           </div>
           <div class="h-auto flex flex-col lg:flex-row gap-16 p-6 dark:bg-gray-800 dark:shadow-white-lg bg-white rounded-2xl shadow-2xl">
+           <a href="">
             <div class="lg:h-100 h-72 sm:h-96  overflow-hidden shadow-xl rounded-2xl ">
               <img style="width: 140rem;  transition: all 13s ease;" class="overflow-hidden lg:hover:-translate-y-[calc(100%-26rem)] sm:hover:-translate-y-[calc(100%-24rem)] hover:-translate-y-[calc(100%-18rem)] cursor-pointer" src="./img/portfolio-3.webp" alt="picture of my website">
             </div>
+           </a>
             <div class="lg:pt-3 pt-2 lg:pr-10 flex flex-col items-center ">
                 <h3 class="text-base dark:text-white lg:text-lg uppercase flex-wrap  flex justify-center items-center gap-1 font-sans font-bold mb-7">
                   GYMATE <span class="text-sm text-gray-700 dark:text-gray-300">(JANUARY 2023)🏋️</span>
@@ -296,12 +301,12 @@
                   <h5 class="shadow-lg font-mulish py-3 px-4 text-black bg-white">SCSS</h5>
                 </div>
                 <div class="flex  gap-14">
-                  <p class="flex justify-center items-center gap-1 text-lg font-medium dark:text-white text-gray-900">
-                    Code <ion-icon name="logo-github"></ion-icon>
-                  </p>
-                  <p class="flex justify-center items-center gap-1 text-lg font-medium dark:text-white text-gray-900">
-                    Live Demo <ion-icon name="laptop-outline"></ion-icon>
-                  </p>
+                  <p >
+                    <a href="" class="flex justify-center items-center gap-1 text-lg font-medium text-gray-900 dark:text-white hover:text-blue-500 transition-all duration-300"> Code <ion-icon name="logo-github"></ion-icon></a>
+                   </p>
+                   <p>
+                     <a href="#" class="flex justify-center items-center gap-1 text-lg font-medium text-gray-900 dark:text-white hover:text-blue-500 transition-all duration-300">Live Demo <ion-icon name="laptop-outline"></ion-icon></a>
+                   </p>
                 </div>
             </div>
           </div>
@@ -319,17 +324,19 @@
                   <h5 class="shadow-lg font-mulish py-3 px-4 text-black bg-white">SCSS</h5>
                 </div>
                 <div class="flex  gap-14">
-                  <p class="flex justify-center items-center gap-1 text-lg font-medium dark:text-white text-gray-900">
-                    Code <ion-icon name="logo-github"></ion-icon>
-                  </p>
-                  <p class="flex justify-center items-center gap-1 text-lg font-medium dark:text-white text-gray-900">
-                    Live Demo <ion-icon name="laptop-outline"></ion-icon>
-                  </p>
+                  <p >
+                    <a href="" class="flex justify-center items-center gap-1 text-lg font-medium text-gray-900 dark:text-white hover:text-blue-500 transition-all duration-300"> Code <ion-icon name="logo-github"></ion-icon></a>
+                   </p>
+                   <p>
+                     <a href="#" class="flex justify-center items-center gap-1 text-lg font-medium text-gray-900 dark:text-white hover:text-blue-500 transition-all duration-300">Live Demo <ion-icon name="laptop-outline"></ion-icon></a>
+                   </p>
                 </div>
             </div>
-            <div class="lg:h-100 h-72 sm:h-96 overflow-hidden shadow-xl rounded-2xl ">
-              <img style="width: 135rem; transition: all 13s ease;" class=" overflow-hidden lg:hover:-translate-y-[calc(100%-26rem)] sm:hover:-translate-y-[calc(100%-24rem)] hover:-translate-y-[calc(100%-18rem)] cursor-pointer" src="./img/portfolio-4.webp" alt="picture of my website">
-            </div>
+            <a href="#">
+              <div class="lg:h-100 h-72 sm:h-96 overflow-hidden shadow-xl rounded-2xl ">
+                <img style="width: 135rem; transition: all 13s ease;" class=" overflow-hidden lg:hover:-translate-y-[calc(100%-26rem)] sm:hover:-translate-y-[calc(100%-24rem)] hover:-translate-y-[calc(100%-18rem)] cursor-pointer" src="./img/portfolio-4.webp" alt="picture of my website">
+              </div>
+            </a>
           </div>
         </div>
 
@@ -338,7 +345,7 @@
       </div>
     </section>
 
-    <section class="bg-white py-28 dark:bg-gray-800">
+    <section id="contact-section" class="bg-white py-28 dark:bg-gray-800">
       <div class="flex flex-col items-center lg:items-start w-full sm:w-4/5 md:max-w-4xl lg:max-w-5xl mx-auto">
         <h3 class="font-bold text-xl mb-4 text-blue-500 uppercase font-sans text-center lg:text-start">
           Contact
@@ -353,7 +360,7 @@
             </div>
             <div class="text-center md:text-start">
               <h6 class="text-gray-900 dark:text-white text-lg font-bold mb-2">Location</h6>
-              <p class="text-gray-600 dark:text-gray-300 text-lg">Tashkent, Uzbkekistan</p>
+              <a href="https://www.google.com/maps/place/Tashkent/" target="_blank" class="text-gray-600 hover:text-blue-500 transition-all duration-300 dark:text-gray-300 text-lg">Tashkent, Uzbkekistan</a>
             </div>
           </div>
           <div class="flex flex-col md:flex-row items-center gap-4">
@@ -362,7 +369,7 @@
             </div>
             <div class="text-center md:text-start">
               <h6 class="text-gray-900 text-lg font-bold mb-2 dark:text-white">Mail</h6>
-              <p class="text-gray-600 text-lg dark:text-gray-300">bahodirovkhusan@gmail.com</p>
+              <a href="mailto:bahodirovkhusan@gmail.com" class="text-gray-600 text-lg dark:text-gray-300 hover:text-blue-500 transition-all duration-300">bahodirovkhusan@gmail.com</a>
             </div>
           </div>
         </div>
@@ -377,8 +384,8 @@
           Copyright © 2023. All rights are reserved
         </h3>
         <div>
-          <ion-icon class="text-3xl mr-4" name="logo-linkedin"></ion-icon>
-          <ion-icon class="text-3xl" name="logo-github"></ion-icon>
+          <a href="https://www.linkedin.com/in/husan-bahodirov-908401245" target="_blank" class="hover:text-blue-500  transition-all duration-300"><ion-icon class="text-3xl mr-4" name="logo-linkedin"></ion-icon></a>
+          <a href="https://github.com/khusan2006" target="_blank" class="hover:text-blue-500  transition-all duration-300"><ion-icon class="text-3xl" name="logo-github"></ion-icon></a>
         </div>
       </div>
     </div>

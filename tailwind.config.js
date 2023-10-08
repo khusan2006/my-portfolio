@@ -2,6 +2,7 @@
 module.exports = {
   content: ["./dist/**/*.{html,js}"],
   darkMode: 'class',
+
   theme: {
     fontFamily: {
       sans: ['"Poppins"', 'sans-serif'],
