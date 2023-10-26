@@ -669,6 +669,10 @@ video {
   margin-right: 1rem;
 }
 
+.mt-auto {
+  margin-top: auto;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -1389,6 +1393,10 @@ html.dark ::-webkit-scrollbar-thumb {
     display: block;
   }
 
+  .lg\:flex {
+    display: flex;
+  }
+
   .lg\:h-100 {
     height: 26rem;
   }
@@ -1431,6 +1439,14 @@ html.dark ::-webkit-scrollbar-thumb {
 
   .lg\:items-start {
     align-items: flex-start;
+  }
+
+  .lg\:items-end {
+    align-items: flex-end;
+  }
+
+  .lg\:items-center {
+    align-items: center;
   }
 
   .lg\:justify-start {
