@@ -25,6 +25,49 @@
     <link rel="stylesheet" href="./css/output.css">
 </head>
 <body>
-    hello world
+    <header class="px-12 py-6 dark:text-white  bg-white dark:bg-gray-900 sticky shadow-md dark:shadow-white-md top-0 z-50 ">
+        <div class="container mx-auto flex justify-between">
+          <a href="./index.html" class="font-bold text-xl cursor-pointer" aria-label="logo">
+            Khusan.dev
+          </>
+      
+          <ul class="hidden md:flex md:gap-8 md:items-center">
+            <li class="text-lg font-semibold hover:text-blue-500 transition-all duration-300 text-gray-900 dark:text-white"><a href="#hero-section">Home</a></li>
+            <li class="text-lg font-semibold hover:text-blue-500 transition-all duration-300 text-gray-900 dark:text-white"><a href="#about-section">About</a></li>
+            <li class="text-lg font-semibold hover:text-blue-500 transition-all duration-300 text-gray-900 dark:text-white"><a href="#projects-section">Projects</a></li>
+            <li class="text-lg font-semibold hover:text-blue-500 transition-all duration-300 text-gray-900 dark:text-white"><a href="#contact-section">Contact</a></li>
+            <li class="theme-toggle flex  items-center justify-center text-xl font-semibold text-gray-900 dark:text-white cursor-pointer">
+              <ion-icon name="moon-outline"></ion-icon>
+            </li>
+          </ul>
+    
+          <div class="md:hidden flex items-center z-50 gap-2">
+            <div class="theme-toggle flex items-center justify-center text-2xl font-semibold  text-gray-900 dark:text-white cursor-pointer">
+              <ion-icon name="moon-outline"></ion-icon>
+             
+            </div>
+            <button aria-label="menu-button" class="outline-none menu-button flex items-center justify-center ">
+                <svg class="w-8 h-8 text-black dark:text-white"
+                 x-show="! showMenu"
+                 fill="none"
+                 stroke-linecap="round"
+                 stroke-linejoin="round"
+                 stroke-width="2"
+                 viewBox="0 00 24 24"
+                 stroke="currentColor"><path d="m4 6h16M4 12h16M4 18h16"><path></svg>
+            </button>
+        </div>
+       
+        </div>
+    
+        <div class="hidden mobile-menu absolute top-0 left-0 h-screen w-screen bg-white dark:bg-gray-900">
+            <ul class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col gap-12">
+              <li class="text-lg font-semibold hover:text-blue-500 transition-all duration-300 dark:text-white text-black"><a href="#hero-section">Home</a></li>
+              <li class="text-lg font-semibold hover:text-blue-500 transition-all duration-300 dark:text-white text-black"><a href="#about-section">About</a></li>
+              <li class="text-lg font-semibold hover:text-blue-500 transition-all duration-300 dark:text-white text-black"><a href="#projects-section">Projects</a></li>
+              <li class="text-lg font-semibold hover:text-blue-500 transition-all duration-300 dark:text-white text-black"><a href="#contact-section">Contact</a></li>
+            </ul>
+        </div>
+      </header>
 </body>
 </html>
