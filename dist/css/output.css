@@ -750,6 +750,22 @@ video {
   height: 2.5rem;
 }
 
+.h-1\/2 {
+  height: 50%;
+}
+
+.h-3\/4 {
+  height: 75%;
+}
+
+.h-20 {
+  height: 5rem;
+}
+
+.h-16 {
+  height: 4rem;
+}
+
 .w-10\/12 {
   width: 83.333333%;
 }
