@@ -70,47 +70,29 @@
         </div>
       </header>
       <main class="flex-1">
-            <section class="bg-gray-100 py-8 h-full">
+            <section class="bg-gray-100 py-8 h-full flex flex-col items-center">
                 <h2 class="text-3xl font-semibold text-center mb-8">Skills</h2>
-                <div class="w-full p-4">
-                    <!-- Section Buttons (Top) -->
-                    <div class="flex justify-center mb-4">
-                        <button class="mx-2 px-4 py-2 font-semibold text-blue-600 hover:text-blue-800">Languages</button>
-                        <button class="mx-2 px-4 py-2 font-semibold text-blue-600 hover:text-blue-800">Frameworks & Libraries</button>
-                        <button class="mx-2 px-4 py-2 font-semibold text-blue-600 hover:text-blue-800">Tools</button>
-                        <!-- Add more section buttons as needed -->
-                    </div>
-                    <!-- Skill Cards (Bottom) -->
-                    <div class="grid grid-cols-3 gap-4">
-                        <!-- Skills for "Languages" section -->
-                        <div class="section-languages hidden">
-                            <div class="bg-white rounded-lg shadow-md p-4">
-                                <h3 class="text-lg font-semibold mb-4">Languages</h3>
-                                <div class="px-4 py-2">JavaScript</div>
-                                <div class="px-4 py-2">Python</div>
-                                <!-- Add more language skills here -->
-                            </div>
+                <div class="w-3/4">
+                    <div class="flex mb-4 w-full">
+                        <div class="flex-1 flex justify-center">
+                            <button class="mx-2 px-4 py-2 font-semibold text-blue-600 hover:text-blue-800">Languages</button>
                         </div>
-                        <!-- Skills for "Frameworks & Libraries" section -->
-                        <div class="section-frameworks hidden">
-                            <div class="bg-white rounded-lg shadow-md p-4">
-                                <h3 class="text-lg font-semibold mb-4">Frameworks & Libraries</h3>
-                                <div class="px-4 py-2">React</div>
-                                <div class="px-4 py-2">Node.js</div>
-                                <!-- Add more framework and library skills here -->
-                            </div>
+                        <div class="flex-1 flex justify-center">
+                            <button class="mx-2 px-4 py-2 font-semibold text-blue-600 hover:text-blue-800">Frameworks & Libraries</button>
                         </div>
-                        <!-- Skills for "Tools" section -->
-                        <div class="section-tools hidden">
-                            <div class="bg-white rounded-lg shadow-md p-4">
-                                <h3 class="text-lg font-semibold mb-4">Tools</h3>
-                                <div class="px-4 py-2">Git</div>
-                                <div class="px-4 py-2">Visual Studio Code</div>
-                                <!-- Add more tool skills here -->
-                            </div>
+                        <div class="flex-1 flex justify-center">
+                            <button class="mx-2 px-4 py-2 font-semibold text-blue-600 hover:text-blue-800">Tools</button>
                         </div>
                     </div>
+                   <div class="w-full flex">
+                    <div class="flex-1">hello</div>
+                    <div class="flex-1">hello</div>
+                    <div class="flex-1">hello</div>
+                   </div>
                 </div>
+                <!-- <div class="w-full p-4">
+                  
+                </div> -->
             </section>
 
       </main>
@@ -129,19 +111,15 @@
       </footer>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-  <script>
-    // JavaScript to handle button clicks and show corresponding skills
-    const sectionButtons = document.querySelectorAll('button');
-    const skillSections = document.querySelectorAll('.section-languages, .section-frameworks, .section-tools');
 
-    sectionButtons.forEach((button, index) => {
-        button.addEventListener('click', () => {
-            skillSections.forEach((section) => {
-                section.classList.add('hidden');
-            });
-            skillSections[index].classList.remove('hidden');
-        });
-    });
-</script>
 </body>
-</html>
+</html>  
+
+
+
+
+
+
+
+
+
