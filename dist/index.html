@@ -15,7 +15,6 @@
   <meta name="theme-color" content="#ffffff">
   <link rel="shortcut icon" href="">
   <title>Khusan Bakhodirov</title>
-  
   <script  src="./js/main.js" defer></script>
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,20 +23,22 @@
 
   <link rel="stylesheet" href="./css/output.css">
 </head>
-<body class="relative font-sans ">
+<body class="relative font-sans bg-gray-50 dark:bg-gray-900">
   <!-- Header section -->
   <header class="px-12 py-6 dark:text-white  bg-white dark:bg-gray-900 sticky shadow-md dark:shadow-white-md top-0 z-50 ">
     <div class="container mx-auto flex justify-between">
+     <div class="navbar-item -translate-y-full">
       <a href="./index.html" class="font-bold text-xl cursor-pointer" aria-label="logo">
         Khusan.dev
       <a/>
+     </div>
   
       <ul class="hidden md:flex md:gap-8 md:items-center">
-        <li class="text-lg font-semibold hover:text-blue-500 transition-all duration-300 text-gray-900 dark:text-white"><a href="#hero-section">Home</a></li>
-        <li class="text-lg font-semibold hover:text-blue-500 transition-all duration-300 text-gray-900 dark:text-white"><a href="#about-section">About</a></li>
-        <li class="text-lg font-semibold hover:text-blue-500 transition-all duration-300 text-gray-900 dark:text-white"><a href="#projects-section">Projects</a></li>
-        <li class="text-lg font-semibold hover:text-blue-500 transition-all duration-300 text-gray-900 dark:text-white"><a href="#contact-section">Contact</a></li>
-        <li class="theme-toggle flex  items-center justify-center text-xl font-semibold text-gray-900 dark:text-white cursor-pointer">
+        <li class="text-lg font-semibold hover:text-blue-500 transition-all duration-300 text-gray-900 dark:text-white navbar-item -translate-y-full"><a href="#hero-section">Home</a></li>
+        <li class="text-lg font-semibold hover:text-blue-500 transition-all duration-300 text-gray-900 dark:text-white navbar-item -translate-y-full"><a href="#about-section">About</a></li>
+        <li class="text-lg font-semibold hover:text-blue-500 transition-all duration-300 text-gray-900 dark:text-white navbar-item -translate-y-full"><a href="#projects-section">Projects</a></li>
+        <li class="text-lg font-semibold hover:text-blue-500 transition-all duration-300 text-gray-900 dark:text-white navbar-item -translate-y-full"><a href="#contact-section">Contact</a></li>
+        <li class="theme-toggle flex  items-center justify-center text-xl font-semibold text-gray-900 dark:text-white cursor-pointer navbar-item -translate-y-full">
           <ion-icon name="moon-outline"></ion-icon>
         </li>
       </ul>
@@ -76,19 +77,22 @@
     <section id="hero-section" class="lg:flex lg:items-center bg-gray-50 dark:bg-gray-900 dark:text-white pt-14 pb-12 h-[calc(100vh-76px)] relative overflow-x-hidden overflow-y-hidden">
       <div class="w-full sm:max-w-3xl md:max-w-4xl lg:max-w-5xl mx-auto flex lg:flex-row flex-col-reverse">
         <div class="z-10 flex flex-col flex-1 text-center lg:text-start sm:w-4/5 w-5/6 lg:w-full mx-auto">
-          <h1 class="text-4xl  sm:text-6xl  text-primary dark:text-white font-bold mb-8 pt-10 ">
+          <h1 id="hero-title" class="text-4xl sm:text-6xl text-primary dark:text-white font-bold mb-8 pt-10">
             Front-End React Developer &#128075
           </h1>
-          <p class="text-lg font-medium font-mulish  text-gray-700 dark:text-gray-300 mb-8">
+          <p id="hero-subtitle" class="text-lg font-medium font-mulish text-gray-700 dark:text-gray-300 mb-8">
             Hi, I'm Bakhodirov Khusan. A passionate Front-end React Developer based in Tashkent, Uzbekistan. 📍
           </p>
-          <div>
-           <a aria-label="link to my linkedin page" href="https://www.linkedin.com/in/husan-bahodirov-908401245" target="_blank" class="hover:text-blue-500  transition-all duration-300"><ion-icon class="text-3xl mr-4" name="logo-linkedin"></ion-icon></a>
-           <a aria-label="link to my github page" href="https://github.com/khusan2006" target="_blank" class="hover:text-blue-500  transition-all duration-300"><ion-icon class="text-3xl" name="logo-github"></ion-icon></a>
+          <div id="icons">
+            <a aria-label="link to my linkedin page" href="https://www.linkedin.com/in/husan-bahodirov-908401245" target="_blank"
+              class="hover:text-blue-500 transition-all duration-300 "><ion-icon class="text-3xl mr-4" name="logo-linkedin"></ion-icon></a>
+            <a aria-label="link to my github page" href="https://github.com/khusan2006" target="_blank"
+              class="hover:text-blue-500 transition-all duration-300 "><ion-icon class="text-3xl" name="logo-github"></ion-icon></a>
           </div>
         </div>
-        <div class="flex-1 flex lg:justify-end justify-center ">
-          <img class="z-10 w-72 h-72 md:w-80 md:h-80 lg:w-90 lg:h-90 image border-solid border-black dark:border-white border-2" width="18rem" height="18rem" src="./img/XusanV4.png" alt="image of me">
+        <div class="flex-1 flex lg:justify-end justify-center">
+          <img class="hero-img z-10 w-72 h-72 md:w-80 md:h-80 lg:w-90 lg:h-90 image border-solid border-black dark:border-white border-2"
+            width="18rem" height="18rem" src="./img/XusanV4.png" alt="image of me">
         </div>
       </div>
     </section>
@@ -395,5 +399,6 @@
 
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
 </body>
 </html>
