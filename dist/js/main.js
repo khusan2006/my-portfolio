@@ -1,7 +1,8 @@
 const menuToggler = document.querySelector('button.menu-button');
 const menu = document.querySelector(".mobile-menu");
 const themeToggle = document.querySelectorAll('.theme-toggle');
-console.log(themeToggle)
+const skillsBtn = document.querySelectorAll('.skills-btn');
+const skillsContainer =document.querySelectorAll('.skills')
 themeToggle.forEach((element) => {
     element.addEventListener('click', () => {
         if(document.documentElement.classList.contains('dark')) {
@@ -20,47 +21,63 @@ menuToggler.addEventListener("click", () => {
 })
 
 
-const imgAnimation = anime({
-    targets: '.hero-img',
-    translateY: [50,0],
-    opacity: [0,1],
-    duration: 1000,
-    delay: 1500,
-    easing: 'easeInOutQuad'
+skillsBtn.forEach(btn => {
+    btn.addEventListener('click', function(e) {
+        skillsContainer.forEach((skills, index) => {
+            if(e.target.value !== index) {
+                skills.style.display = 'none'
+            }
+            if(e.target.value == index) {
+                skills.style.display = 'grid'
+            }
+        })
+
+    })
 })
+// const imgAnimation = anime({
+//     targets: '.hero-img',
+//     translateY: [-50,0],
+//     opacity: [0,1],
+//     duration: 1000,
+//     easing: 'easeInOutExpo'
+// })
+
 // const navbarAnimation = anime({
 //     targets: '.navbar-item',
-//     translateY: [-100, 0],
+//     translateY: [-50, 0],
 //     opacity: [0,1],
-//     easing: 'linear',
-//     delay: anime.stagger(50, {start: 50})
+//     easing: 'easeInOutExpo',
+//     delay: anime.stagger(30, {start: 0})
 // })
-const timeline = anime.timeline({
-    // duration: 1000,
-    easing: 'easeOutExpo',
-  });
 
-  timeline.add({
-    targets: '.navbar-item',
-    translateY: [-100, 0],
-    opacity: [0,1],
-    easing: 'easeOutSine',
-    delay: anime.stagger(50, {start: 50})
-})
-    .add({
-      targets: '#hero-title',
-      translateY: [-100, 0],
-      opacity: [0, 1],
-      duration: 300,
-    }).add({
-        targets: '#hero-subtitle',
-        translateY: [-50, 0],
-        opacity: [0,1],
-        duration: 300,
+// const heroTitleAnimation = anime({
+//     targets: '#hero-title',
+//     translateY: [-100, 0],
+//     opacity: [0, 1],
+//     duration: 1000,
+//     easing: 'easeInOutExpo',
+//   })
 
-    }).add({
-        targets: '#icons',
-        translateY: [-30,0],
-        opacity: [0,1],
-        duration: 300,
-    })
+// const heroSubtitleAnimation = anime({
+//     targets: '#hero-subtitle',
+//     translateY: [-50, 0],
+//     opacity: [0,1],
+//     duration: 1000,
+//     easing: 'easeInOutExpo',
+// })
+
+// const heroIconsAnimation = anime({
+//     targets: '#icons',
+//     translateY: [-30,0],
+//     opacity: [0,1],
+//     duration: 1000,
+//     easing: 'easeInOutExpo',
+// })
+
+// const techAnimation = anime({
+//     targets: '#tech',
+//     translateX: [-30,0],
+//     opacity: [0,1],
+//     duration: 1000,
+//     easing: 'easeInOutExpo',
+// })

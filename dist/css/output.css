@@ -746,6 +746,10 @@ video {
   height: 100vh;
 }
 
+.h-20 {
+  height: 5rem;
+}
+
 .w-0 {
   width: 0px;
 }
@@ -899,6 +903,10 @@ video {
 
 .gap-6 {
   gap: 1.5rem;
+}
+
+.gap-10 {
+  gap: 2.5rem;
 }
 
 .gap-x-10 {
@@ -1425,8 +1433,16 @@ html.dark ::-webkit-scrollbar-thumb {
 }
 
 @media (min-width: 768px) {
+  .md\:block {
+    display: block;
+  }
+
   .md\:flex {
     display: flex;
+  }
+
+  .md\:grid {
+    display: grid;
   }
 
   .md\:hidden {
@@ -1437,12 +1453,32 @@ html.dark ::-webkit-scrollbar-thumb {
     height: 20rem;
   }
 
+  .md\:h-14 {
+    height: 3.5rem;
+  }
+
+  .md\:h-auto {
+    height: auto;
+  }
+
   .md\:w-80 {
     width: 20rem;
   }
 
+  .md\:w-auto {
+    width: auto;
+  }
+
+  .md\:w-14 {
+    width: 3.5rem;
+  }
+
   .md\:max-w-4xl {
     max-width: 56rem;
+  }
+
+  .md\:flex-1 {
+    flex: 1 1 0%;
   }
 
   .md\:grid-cols-5 {
@@ -1451,6 +1487,10 @@ html.dark ::-webkit-scrollbar-thumb {
 
   .md\:grid-rows-1 {
     grid-template-rows: repeat(1, minmax(0, 1fr));
+  }
+
+  .md\:grid-rows-25 {
+    grid-template-rows: repeat(3,6rem);
   }
 
   .md\:flex-row {
@@ -1475,6 +1515,10 @@ html.dark ::-webkit-scrollbar-thumb {
 
   .md\:gap-8 {
     gap: 2rem;
+  }
+
+  .md\:gap-y-0 {
+    row-gap: 0px;
   }
 
   .md\:pb-40 {
