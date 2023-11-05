@@ -1473,6 +1473,10 @@ html.dark ::-webkit-scrollbar-thumb {
     width: 3.5rem;
   }
 
+  .md\:w-4\/5 {
+    width: 80%;
+  }
+
   .md\:max-w-4xl {
     max-width: 56rem;
   }
@@ -1515,6 +1519,10 @@ html.dark ::-webkit-scrollbar-thumb {
 
   .md\:gap-8 {
     gap: 2rem;
+  }
+
+  .md\:gap-16 {
+    gap: 4rem;
   }
 
   .md\:gap-y-0 {
