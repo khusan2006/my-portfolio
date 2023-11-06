@@ -3,12 +3,25 @@ const menu = document.querySelector(".mobile-menu");
 const themeToggle = document.querySelectorAll('.theme-toggle');
 const skillsBtn = document.querySelectorAll('.skills-btn');
 const skillsContainer =document.querySelectorAll('.skills')
+
+const theme = localStorage.getItem('theme') || 'light'
+
+if(theme === 'dark') {
+    document.documentElement.classList.add('dark')
+    themeToggle.forEach(elemenet => elemenet.innerHTML = '<ion-icon name="sunny-outline"></ion-icon>')
+}else{
+    document.documentElement.classList.remove('dark')
+    themeToggle.forEach(elemenet => elemenet.innerHTML = '<ion-icon name="moon-outline"></ion-icon>')
+}
+
 themeToggle.forEach((element) => {
     element.addEventListener('click', () => {
         if(document.documentElement.classList.contains('dark')) {
+            localStorage.setItem('theme', 'light')
             element.innerHTML = '<ion-icon name="moon-outline"></ion-icon>'
-    
+
         }else{
+            localStorage.setItem('theme', 'dark')
             element.innerHTML = '<ion-icon name="sunny-outline"></ion-icon>'
     
         }
@@ -20,24 +33,7 @@ menuToggler.addEventListener("click", () => {
     menu.classList.toggle("hidden");
 })
 
-if(document.documentElement.clientWidth < 800) {
-    skillsBtn[0].style.color = 'blue'
-    skillsBtn.forEach(btn => {
-        btn.addEventListener('click', function(e) {
-            skillsContainer.forEach((skills, index) => {
-                if(e.target.value !== index) {
-                    skillsBtn[index].style.color = ''
-                    skills.style.display = 'none'
-                }
-                if(e.target.value == index) {
-                    skillsBtn[index].style.color = 'blue'
-                    skills.style.display = 'grid'
-                }
-            })
-    
-        })
-    })
-}
+
 
 
 // const imgAnimation = anime({
