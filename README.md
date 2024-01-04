@@ -1,17 +1,18 @@
 <div align='center'><h1>Khusan.dev</h1></div>
-
 <h2>About the project</h2>
 
   <p> Welcome to my portfolio website repository! This website serves as a showcase of my skills, experiences, and projects. Crafted with a blend of modern web technologies, it's designed to provide visitors with an engaging and informative experience.</p>
 
 <p>Credits for the design goes to <a href='https://xpeedstudio.com/'>XpeedStudio</a></p>
 
-👉 Live Demo: <a href='https://car-rental-ten.vercel.app/'>Live Demo</a>
+👉 Live Demo: <a href='https://khusan-portfolio-website.netlify.app'>Live Demo</a>
 
 <h3>Build with:</h3>
 
-» Sass / Scss <br>
-» React JS
+» HTML <br>
+» Tailwind CSS <br>
+» JavaScript
+
 
 <h2>Screenshots of the Project 📸</h2>
 <br>
