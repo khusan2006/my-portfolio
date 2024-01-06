@@ -11,6 +11,16 @@
 » Tailwind CSS <br>
 » JavaScript
 
+<h3>What I have learnt</h3>
+
+» how to use tailwind css<br>
+
+<h3>What was challenging</h3>
+
+» nothing was challenging <br>
+
+
+
 
 <h2>Screenshots of the Project 📸</h2>
 <br>
